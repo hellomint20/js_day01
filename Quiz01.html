@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Quiz01</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let name = prompt("이름 입력");
+		let age = prompt(name+"님의 나이 입력");
+		let addr = prompt(name+"님의 주소 입력");
+		
+		
+	document.write(`
+			<table border="1">
+				<tr>
+					<th>이름</th> 	<th>나이</th> 	<th>주소</th>
+				</tr>
+				<tr>
+					<td>${name}</td> <td>${age}</td> <td>${addr}</td>
+				</tr>
+			</table>`);
+	</script>
+</body>
+</html>
