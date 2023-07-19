@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Page_13</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const result01 = () => { 10+20 };	//연산만하고 return 해주지 않음
+		const result02 = () => 10+20;
+		const result03 = () => ( 10+20 );
+		const result04 = () => {return 10+20;};
+		
+		document.write(result01()+"<br>");	//undefined
+		document.write(result02()+"<br>");	//30
+		document.write(result03()+"<br>"); 	//30
+		document.write(result04()+"<br>"); 	//30
+	</script>
+</body>
+</html>
