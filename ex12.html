@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Page_12</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function test(){
+			console.log("일반 함수");
+		}
+		const test2 = () => console.log("화살표 함수");
+		test();
+		test2();
+		
+		function test33() {	//test3() 함수와 똑같이 표현됨
+			console.log("여러 개");
+			return 1000;
+		}
+		
+		let test3 = () => {
+			console.log("여러 개");
+			return 1000;
+		}
+		console.log(test3());
+	</script>
+</body>
+</html>
