@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Quiz02</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("1. 입력한 수가 3의 배수인 경우 출력<br>")
+		let num = prompt("1. 수 입력");
+		if( num % 3 == 0 )	document.write("3의 배수입니다<hr>");
+		else document.write("3의 배수가 아닙니다<hr>");
+		
+		document.write("2. 입력한 수 절대값 구하기<br>")
+		num = prompt("2. 수 입력");
+		if( num < 0 ) document.write(`${num}의 절대값은 ${-num}입니다<hr>`);
+		else document.write(`${num}의 절대값은 ${num}입니다<hr>`);
+	
+		document.write("3. 두 수를 입력 받아 큰 수 출력<br>")
+		let n1 = prompt("3. 첫번째 수 입력");
+		let n2 = prompt("3. 두번째 수 입력");
+		if( n1 > n2 ){ document.write(`${n1}가 큰값입니다<hr>`); }
+		if( n2 > n1 ){ document.write(`${n2}가 큰값입니다<hr>`); }
+		
+		document.write("4. 세 수를 입력 받아 큰 수 출력<br>")
+		n1 = prompt("4. 첫번째 수 입력");
+		n2 = prompt("4. 두번째 수 입력");
+		let n3 = prompt("4. 세번째 수 입력");
+		let max;
+		if( n1 > n2 ){ max = n1; }
+		if( n2 > n1 ){ max = n2; }
+		if( n3 > max ){ max = n3; }
+		document.write(`${n1}, ${n2}, ${n3} 중 ${max}가 큰값입니다<hr>`);
+	
+		document.write("5. 두 수를 입력 받아 합이 짝수이고 3의 배수이면 출력<br>")
+		n1 = prompt("5. 첫번째 수 입력");
+		n2 = prompt("5. 두번째 수 입력");
+		let sum = Number(n1)+Number(n2);
+		if( sum %2 == 0 && sum%3 == 0 )	document.write(sum+"은 짝수이며 3의 배수 입니다<hr>");
+		else document.write(sum+"은 짝수이며 3의 배수가 아닙니다<hr>");
+	</script>
+</body>
+</html>
